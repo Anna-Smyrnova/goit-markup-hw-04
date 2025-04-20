@@ -93,15 +93,16 @@ padding: 24px 0;}
 
 .link-menu-list:hover,
 .link-menu-list:focus,
-.link-menu-list.studio {
+.link-menu-list .studio {
     color: #404BBF;
 }
 
-.link-menu-list.studio {
+.link-menu-list .studio {
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-menu-list.studio::after {
+.link-menu-list .studio::after {
     content: '';
     position: absolute;
     left: 0;
@@ -148,8 +149,8 @@ display: block;
 .banner {
     background: #2e2f42;
         padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/people-office\ 1.jpg);
+background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
         max-width: 1440px;
         background-repeat: no-repeat;
         background-position: center;
@@ -418,9 +419,9 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         width: 100%;
         top: 0;
         left: 0;
-        transform: translateY(100%);
         height: 100%;
         width: 100%;
+        transform: translateY(100%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item-list:hover .portfolio-item-list:active,  .portfolio-text-overlay 
