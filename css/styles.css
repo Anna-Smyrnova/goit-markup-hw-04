@@ -508,16 +508,14 @@ height: 40px;
 }
 
 .social-icons-link-footer:hover,
-.social-icons-link-footer:focus {
+.social-icons-link-footer:focus
+ {
     background-color: #31D0AA;
 }
 
 .social-icons-footer {
     fill: #f4f4fd;
 }
-
-
-
 
 
 
